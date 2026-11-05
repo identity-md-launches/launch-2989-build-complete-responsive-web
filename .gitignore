@@ -1,0 +1,7 @@
+node_modules/
+.npm/
+.cache/
+*.tgz
+.DS_Store
+test/scratch/
+# dist/ is committed on purpose: it is the static export that gets hosted.

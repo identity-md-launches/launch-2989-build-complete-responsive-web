@@ -1,0 +1,19 @@
+{
+  "name": "squeek-radar",
+  "version": "1.0.0",
+  "description": "Squeek Radar: live activity and event monitor for the Squeekchain hamster wheel. Know what's happening on the wheel.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check:dist": "node scripts/build.mjs --check",
+    "preview": "node scripts/serve.mjs dist",
+    "dev": "node scripts/serve.mjs src",
+    "test": "node --test test/",
+    "typecheck": "npx --yes -p typescript@5.6.3 tsc -p tsconfig.json"
+  }
+}
