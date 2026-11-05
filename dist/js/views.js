@@ -9,7 +9,7 @@ import {
   esc, int, distance, speedKmh, speedMms, rpm, pctBps, sqk, blockFraction, ms, num, utc, clock, shortHash, humanize,
 } from './format.js';
 import {
-  freshness, milestones, latestImportant, latestMilestone, roundWindow, todayFromStats, sortSettlements, summary, describeEvent, EVENT_TYPES, typeLabel,
+  freshness, settlementFreshness, milestones, latestImportant, latestMilestone, roundWindow, todayFromStats, sortSettlements, summary, describeEvent, EVENT_TYPES, typeLabel,
 } from './derive.js';
 import {
   icon, badge, freshBadge, stat, card, loading, errorState, emptyState, gate, staleNotice, progress, eventItem, barChart, sparkline, txLink, coreStatusText, relTime, stamp,
@@ -105,6 +105,36 @@ function eventsGate() {
   return emptyState('No measurement events have been reported yet.', 'New milestones and records appear here as soon as the API reports them.');
 }
 
+/** Shared source context for every view derived from the retained event history. */
+function eventsNotice() {
+  const res = r().events;
+  const notices = [];
+  if (res.state === 'unavailable' || res.state === 'error') {
+    const status = res.state === 'unavailable' ? 'Events source is unavailable' : 'Events refresh failed';
+    const checked = res.lastOkAt ? `last successful check ${stamp(new Date(res.lastOkAt).toISOString())}` : 'no successful check in this session';
+    const retained = state.events.length || state.alerts.items.length;
+    notices.push(`<p class="notice">${icon('alert', 'icon icon-sm')}<span>${status} (${esc(res.message)}). ${retained ? `Showing last-known history; ${checked}. ` : ''}Radar retries automatically.</span></p>`);
+  }
+  if (state.eventCatchup) notices.push(`<p class="notice">${icon('clock', 'icon icon-sm')}Checking for missed events. History coverage is incomplete until catch-up finishes; new alerts appear as events are recovered.</p>`);
+  return notices.join('');
+}
+
+/** Confirmed settlement history remains useful even when its source is stale. */
+function settlementsNotice(onlyWarning = false) {
+  const res = r().settlements;
+  if (!res.data) return '';
+  const snapshot = res.snapshot;
+  const f = settlementFreshness(snapshot, now());
+  const failed = res.state === 'error' || res.state === 'unavailable';
+  if (onlyWarning && !failed && f.freshness === 'fresh' && !res.fromCache) return '';
+  const reasons = [...f.reasons];
+  if (failed) reasons.push(`${res.state === 'unavailable' ? 'source unavailable' : 'refresh failed'}: ${res.message}`);
+  if (res.fromCache) reasons.push('saved in this browser; awaiting an API check');
+  const warning = failed || reasons.length || f.freshness === 'unavailable';
+  return `${warning ? `<p class="notice">${icon('clock', 'icon icon-sm')}${failed || f.freshness === 'stale' ? 'Stale settlement snapshot' : 'Settlement freshness unknown'}${reasons.length ? ` (${esc(reasons.join('; '))})` : ''}. Showing last-known confirmed history. Radar retries automatically.</p>` : ''}
+    <p class="muted small">Snapshot as of ${snapshot?.generatedAt ? stamp(snapshot.generatedAt) : 'an unreported time'}. Source: ${esc(snapshot?.source ?? 'not exposed by the API')}. Window: ${esc(utc(snapshot?.window?.startAt) ?? 'not reported')} to ${esc(utc(snapshot?.window?.endAt) ?? 'not reported')}. ${res.lastOkAt ? `Last successful check ${stamp(new Date(res.lastOkAt).toISOString())}.` : ''}</p>`;
+}
+
 /* ---------- views ---------- */
 
 /** @type {View} */
@@ -144,9 +174,9 @@ const dashboard = {
           id: 'd-sum',
           title: 'What just happened?',
           ic: 'radar',
-          body: lines.length
+          body: eventsNotice() + settlementsNotice(true) + (lines.length
             ? `<ul class="summary">${lines.map((l) => `<li>${esc(l)}</li>`).join('')}</ul>`
-            : loading('summary'),
+            : loading('summary')),
         }),
       },
       {
@@ -155,7 +185,7 @@ const dashboard = {
           id: 'd-imp',
           title: 'Latest important event',
           ic: 'trophy',
-          body: evGate ?? `<ul class="events">${eventItem(imp, { headingLevel: 3 })}</ul>`,
+          body: eventsNotice() + (evGate ?? `<ul class="events">${eventItem(imp, { headingLevel: 3 })}</ul>`),
         }),
       },
       {
@@ -165,7 +195,7 @@ const dashboard = {
           title: 'Latest milestone',
           ic: 'flag',
           meta: '<a class="more" href="#/milestones">Milestone radar</a>',
-          body: evGate ?? (ms_ ? `<ul class="events">${eventItem(ms_, { headingLevel: 3 })}</ul>` : emptyState('No milestone events yet.')),
+          body: eventsNotice() + (evGate ?? (ms_ ? `<ul class="events">${eventItem(ms_, { headingLevel: 3 })}</ul>` : emptyState('No milestone events yet.'))),
         }),
       },
       {
@@ -180,7 +210,7 @@ const dashboard = {
           title: 'Recent events',
           ic: 'list',
           meta: '<a class="more" href="#/events">All events</a>',
-          body: evGate ?? `<ul class="events events-grid">${state.events.slice(0, 6).map((e) => eventItem(e, { headingLevel: 3, compact: true })).join('')}</ul>`,
+          body: eventsNotice() + (evGate ?? `<ul class="events events-grid">${state.events.slice(0, 6).map((e) => eventItem(e, { headingLevel: 3, compact: true })).join('')}</ul>`),
         }),
       },
     ];
@@ -291,6 +321,7 @@ function runsBody(res) {
   const d = res.data;
   const items = (d.items ?? []).slice().sort((/** @type {any} */ a, /** @type {any} */ b) => (ms(b.startAt) ?? 0) - (ms(a.startAt) ?? 0)).slice(0, 8);
   return `<p class="muted small">Device-signed segments (${esc(d.authority ?? 'unknown authority')}). Accepted measurements only; confirmed settlement is a separate step. Coverage ${esc(utc(d.coverageStartAt) ?? 'unknown')} to ${esc(utc(d.coverageThroughAt) ?? 'unknown')}.</p>
+    ${state.runsCatchingUp ? `<p class="notice">${icon('clock', 'icon icon-sm')}Catching up with run history. Showing the latest collected segments; newer segments are still loading.</p>` : ''}
     ${d.freshness !== 'fresh' ? `<p class="notice">${icon('clock', 'icon icon-sm')}Runs feed is ${esc(d.freshness ?? 'of unknown freshness')}.</p>` : ''}
     ${items.length ? `<ul class="runs">${items.map((/** @type {any} */ it) => `<li><span class="num">${esc(int(it.workUnits) ?? 'No data')} units</span><span class="muted small">${esc(utc(it.startAt) ?? '')}${it.discontinuity ? ', after a gap' : ''}</span></li>`).join('')}</ul>` : emptyState('No runs on this page.')}
     ${staleNotice(res)}`;
@@ -311,7 +342,7 @@ const events = {
       .join('');
     const older = state.olderCursor
       ? `<button type="button" class="btn" data-action="older" data-focus-key="older" ${state.loadingOlder ? 'disabled' : ''}>${state.loadingOlder ? 'Loading older events' : 'Load older events'}</button>`
-      : state.olderCursor === null ? '<p class="muted small">You have reached the start of the event history.</p>' : '';
+      : state.olderCursor === null && !state.eventCatchup ? '<p class="muted small">You have reached the start of the event history.</p>' : '';
     return [
       { key: 'head', cls: 'span-all', html: `<h1 id="page-title" tabindex="-1">Live event feed</h1><p class="lede">Measurement events from the API, newest first. Checked every 10 seconds.</p>` },
       {
@@ -323,7 +354,7 @@ const events = {
           ic: 'list',
           meta: r().events.lastOkAt ? `<span class="muted small">Checked ${relTime(new Date(r().events.lastOkAt ?? 0).toISOString())}</span>` : '',
           body: `<div class="chips" role="group" aria-label="Filter events by type">${chips}</div>
-            ${staleNotice(r().events)}
+            ${eventsNotice()}
             ${evGate ?? (list.length ? `<ul class="events">${list.map((e) => eventItem(e)).join('')}</ul>` : emptyState(`No ${typeLabel(ui.filter).toLowerCase()} events have been reported.`, 'Choose All to see every event type.'))}
             <div class="feed-foot">${older}${state.olderError ? `<p class="error-text" role="alert">Could not load older events: ${esc(state.olderError)}. Try again.</p>` : ''}</div>`,
         }),
@@ -349,12 +380,13 @@ const radar = {
   regions: () => {
     const evGate = eventsGate();
     const m = milestones(state.events, now());
-    const complete = state.olderCursor === null;
-    const basis = `<p class="muted small">${complete ? `Based on the full event history: ${state.events.length} events.` : `Based on ${state.events.length} events loaded so far. Older history is still loading.`}</p>`;
+    const complete = state.olderCursor === null && !state.eventCatchup;
+    const retained = r().events.state === 'error' || r().events.state === 'unavailable';
+    const basis = `<p class="muted small">${retained ? `Based on ${state.events.length} events in last-known history.` : complete ? `Based on the full event history: ${state.events.length} events.` : `Based on ${state.events.length} events loaded so far. History coverage is incomplete.`}</p>`;
     /** @param {string} id @param {string} title @param {any} ic @param {string} body */
     const c = (id, title, ic, body) => card({ id, title, ic, body: evGate ?? body });
     return [
-      { key: 'head', cls: 'span-all', html: `<h1 id="page-title" tabindex="-1">Milestone radar</h1><p class="lede">Distance, daily, speed and streak milestones the hamster has reached, taken only from reported events.</p>${basis}` },
+      { key: 'head', cls: 'span-all', html: `<h1 id="page-title" tabindex="-1">Milestone radar</h1><p class="lede">Distance, daily, speed and streak milestones the hamster has reached, taken only from reported events.</p>${eventsNotice()}${basis}` },
       { key: 'dist', html: c('m-dist', 'Lifetime distance', 'flag', ladder(m.distance, 'thresholdDistanceMm', distance, 'No lifetime distance milestones reported yet.')) },
       {
         key: 'daily',
@@ -407,7 +439,13 @@ function roundBody() {
   const blocks = r().blocks.data;
   const nr = r().settlements.data?.mining?.nextRound;
   const w = roundWindow({ genesisTimestamp: blocks?.roundSchedule?.genesisTimestamp, anchorRound: nr?.round, anchorStartsAt: nr?.startsAt }, now());
-  if (!w && !st) return r().status.state === 'error' && r().blocks.state === 'error' ? errorState('Round data is unavailable.', 'Status and block endpoints both failed. Radar retries automatically.') : loading('round data');
+  if (!w && !st) {
+    /** @type {[string, import('./store.js').Resource][]} */
+    const sources = [['Status', r().status], ['Blocks', r().blocks], ['Settlements', r().settlements]];
+    if (sources.some(([, res]) => res.state === 'loading')) return loading('round data');
+    const reasons = sources.filter(([, res]) => res.message).map(([label, res]) => `${label}: ${res.message}`).join('. ');
+    return errorState('Round data is unavailable.', `${reasons || 'The API has not reported a round schedule'}. Radar retries automatically.`);
+  }
   const q = st?.builder?.status === 'available' ? st.builder.queued : null;
   const oc = st?.oracle;
   return `${w ? `<p class="progress-label"><span>${w.round ? `Round ${esc(int(w.round))}` : 'Current round window'}</span><span class="num" data-countdown="${w.endsAt}">${clock(w.remaining)} left</span></p>
@@ -455,7 +493,7 @@ function provBody() {
 
 function settlementsBody() {
   const res = r().settlements;
-  const g = gate(res, 'settlements');
+  const g = res.data ? null : gate(res, 'settlements');
   if (g) return g;
   const d = res.data;
   const list = sortSettlements(d.recentSettlements ?? []);
@@ -464,7 +502,7 @@ function settlementsBody() {
     const label = `${utc(b.startAt)?.split(', ')[1]?.slice(0, 5) ?? ''} UTC`;
     return { label, value: num(b.workAdded), title: `${utc(b.startAt)}: ${int(b.workAdded) ?? 'no data'} work units settled in ${int(b.settlementCount) ?? 'unknown'} settlements` };
   });
-  return `<dl class="stats stats-4">
+  return `${settlementsNotice()}<dl class="stats stats-4">
       ${stat('Settlements', int(sum.settlementCount))}
       ${stat('Work settled', int(sum.workAdded), 'Work units')}
       ${stat('Blocks completed', int(sum.completedBlockCount))}
@@ -508,7 +546,7 @@ const alerts = {
           title: unread ? `Alerts (${unread} unread)` : 'Alerts',
           ic: 'bell',
           meta: unread ? `<button type="button" class="btn btn-sm" data-action="read-all" data-focus-key="read-all">Mark all as read</button>` : '',
-          body: !items.length
+          body: eventsNotice() + (!items.length
             ? (state.events.length || r().events.state === 'ok'
               ? emptyState('No alerts yet.', 'New events will show up here while Radar is open.')
               : gate(r().events, 'events') ?? loading('alerts'))
@@ -520,7 +558,7 @@ const alerts = {
                 <p class="event-meta">${a.read ? badge('Read', 'info') : badge('New', 'conf')} <span class="tag">${esc(typeLabel(a.type))}</span> Event ${stamp(a.occurredAt)}</p></div>
                 ${a.read ? '' : `<button type="button" class="btn btn-sm" data-action="read" data-id="${esc(a.id)}" data-focus-key="read-${esc(a.id)}">Mark read<span class="sr-only">: ${esc(a.title)}</span></button>`}
               </li>`)
-              .join('')}</ul>`,
+              .join('')}</ul>`),
         }),
       },
       { key: 'notify', html: card({ id: 'a-notify', title: 'Browser notifications', ic: 'bell', body: notify }) },

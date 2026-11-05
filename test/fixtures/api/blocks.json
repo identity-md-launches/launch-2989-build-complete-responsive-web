@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "game-block-projection.v1",
+  "installationId": "sepolia-core-sepolia-20261103",
+  "generatedAt": "2026-11-05T09:13:34.789Z",
+  "revision": "DhO4hk5XFnrOiH-6ze7-ViDk--xP_Ol9c3YDc-KesxQ",
+  "observedAt": "2026-11-05T09:13:02.334Z",
+  "receivedAt": "2026-11-05T09:13:02.468Z",
+  "provenance": "hardware",
+  "profile": "staging",
+  "chain": {
+    "chainId": "11155111",
+    "coreAddress": "0xfd6c166d4b8e2962e65746a13e5a0797cd4de0c4",
+    "graphManifestDigest": "0x3640301c2f10a959c8fb322b3e3ebbf70360738ed3a0c97b11c514e4d4d8ef39"
+  },
+  "roundSchedule": {
+    "genesisTimestamp": "1793735400",
+    "roundDurationSeconds": 600
+  },
+  "status": "available",
+  "freshness": "fresh",
+  "anchor": {
+    "cumulativeWork": "3817",
+    "cumulativeBlockUnits": "366425653103",
+    "blockHeight": "366",
+    "blockProgress": "425653103",
+    "workPerThousandBlocks": "9546",
+    "settledThroughRound": "223",
+    "confirmedAt": "2026-11-05T09:00:36.000Z",
+    "transactionHash": "0x20972f881b9ec1eeefade21245ab836bb23933d4b1bd873244e8fae51c9e9543"
+  },
+  "projected": {
+    "cumulativeWork": "3817",
+    "cumulativeBlockUnits": "366425653103",
+    "blockHeight": "366",
+    "blockProgress": "425653103",
+    "workPerThousandBlocks": "9546"
+  },
+  "blocks": []
+}

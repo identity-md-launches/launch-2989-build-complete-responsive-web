@@ -1,0 +1,506 @@
+{
+  "schemaVersion": "measurement-runs.v1",
+  "installationId": "sepolia-core-sepolia-20261103",
+  "generatedAt": "2026-11-05T09:13:19.783Z",
+  "authority": "pi-device-key",
+  "certifiedCoreWork": false,
+  "freshness": "fresh",
+  "latestObservedAt": "2026-11-05T09:13:02.334801Z",
+  "coverageStartAt": "2026-11-05T02:42:55.347028Z",
+  "coverageThroughAt": "2026-11-05T09:13:02.334801Z",
+  "items": [
+    {
+      "segmentId": "b30d27fa-c35a-441d-aa2f-b3e0dcd07aac",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": true,
+      "startAt": "2026-11-05T02:42:55.347028Z",
+      "endAt": "2026-11-05T02:42:55.347028Z",
+      "workUnits": "1",
+      "maxGapMs": "0",
+      "previousAt": null,
+      "boundaryGapNs": null,
+      "passages": [
+        {
+          "at": "2026-11-05T02:42:55.347028Z",
+          "offsetNs": "0"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T02:42:55.436Z",
+      "receivedAt": "2026-11-05T02:42:55.593Z",
+      "measurementEligible": true
+    },
+    {
+      "segmentId": "e42ebbaf-e177-427b-a3be-6b7a8e9b98a1",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": false,
+      "startAt": "2026-11-05T02:42:56.625359Z",
+      "endAt": "2026-11-05T02:42:56.625359Z",
+      "workUnits": "1",
+      "maxGapMs": "1279",
+      "previousAt": "2026-11-05T02:42:55.347028Z",
+      "boundaryGapNs": "1278331000",
+      "passages": [
+        {
+          "at": "2026-11-05T02:42:56.625359Z",
+          "offsetNs": "0"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T02:42:57.401Z",
+      "receivedAt": "2026-11-05T02:42:57.507Z",
+      "measurementEligible": true
+    },
+    {
+      "segmentId": "08c46e81-b796-4fb7-8b1f-6130948de4af",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": false,
+      "startAt": "2026-11-05T02:42:58.031641Z",
+      "endAt": "2026-11-05T02:42:58.031641Z",
+      "workUnits": "1",
+      "maxGapMs": "1407",
+      "previousAt": "2026-11-05T02:42:56.625359Z",
+      "boundaryGapNs": "1406282000",
+      "passages": [
+        {
+          "at": "2026-11-05T02:42:58.031641Z",
+          "offsetNs": "0"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T02:42:59.402Z",
+      "receivedAt": "2026-11-05T02:42:59.511Z",
+      "measurementEligible": true
+    },
+    {
+      "segmentId": "f0765080-9fa8-4a30-afd9-01c1e7805a7d",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": false,
+      "startAt": "2026-11-05T02:42:59.612383Z",
+      "endAt": "2026-11-05T02:42:59.612383Z",
+      "workUnits": "1",
+      "maxGapMs": "1581",
+      "previousAt": "2026-11-05T02:42:58.031641Z",
+      "boundaryGapNs": "1580742000",
+      "passages": [
+        {
+          "at": "2026-11-05T02:42:59.612383Z",
+          "offsetNs": "0"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T02:43:01.403Z",
+      "receivedAt": "2026-11-05T02:43:01.525Z",
+      "measurementEligible": true
+    },
+    {
+      "segmentId": "4aa87963-eb9b-44d1-9e55-b313785deae3",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": false,
+      "startAt": "2026-11-05T02:43:01.457524Z",
+      "endAt": "2026-11-05T02:43:01.457524Z",
+      "workUnits": "1",
+      "maxGapMs": "1846",
+      "previousAt": "2026-11-05T02:42:59.612383Z",
+      "boundaryGapNs": "1845141000",
+      "passages": [
+        {
+          "at": "2026-11-05T02:43:01.457524Z",
+          "offsetNs": "0"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T02:43:03.403Z",
+      "receivedAt": "2026-11-05T02:43:03.522Z",
+      "measurementEligible": true
+    },
+    {
+      "segmentId": "9550a5a5-9557-42ad-a4b1-3aca3df63e02",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": false,
+      "startAt": "2026-11-05T02:43:03.788310Z",
+      "endAt": "2026-11-05T02:43:03.788310Z",
+      "workUnits": "1",
+      "maxGapMs": "2331",
+      "previousAt": "2026-11-05T02:43:01.457524Z",
+      "boundaryGapNs": "2330786000",
+      "passages": [
+        {
+          "at": "2026-11-05T02:43:03.788310Z",
+          "offsetNs": "0"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T02:43:05.414Z",
+      "receivedAt": "2026-11-05T02:43:05.535Z",
+      "measurementEligible": true
+    },
+    {
+      "segmentId": "0af042de-6fa9-4b2f-9b70-193127c96962",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": false,
+      "startAt": "2026-11-05T04:15:57.096538Z",
+      "endAt": "2026-11-05T04:15:57.096538Z",
+      "workUnits": "1",
+      "maxGapMs": "5573309",
+      "previousAt": "2026-11-05T02:43:03.788310Z",
+      "boundaryGapNs": "5573308228000",
+      "passages": [
+        {
+          "at": "2026-11-05T04:15:57.096538Z",
+          "offsetNs": "0"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T04:15:57.184Z",
+      "receivedAt": "2026-11-05T04:15:57.338Z",
+      "measurementEligible": true
+    },
+    {
+      "segmentId": "ee16197c-8bbc-4427-863d-f9f6b76d8f8e",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": false,
+      "startAt": "2026-11-05T04:15:58.124577Z",
+      "endAt": "2026-11-05T04:15:58.124577Z",
+      "workUnits": "1",
+      "maxGapMs": "1029",
+      "previousAt": "2026-11-05T04:15:57.096538Z",
+      "boundaryGapNs": "1028039000",
+      "passages": [
+        {
+          "at": "2026-11-05T04:15:58.124577Z",
+          "offsetNs": "0"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T04:15:59.166Z",
+      "receivedAt": "2026-11-05T04:15:59.264Z",
+      "measurementEligible": true
+    },
+    {
+      "segmentId": "a3fd69d2-6718-4044-ba0a-b8b6713ae03c",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": false,
+      "startAt": "2026-11-05T04:15:59.144824Z",
+      "endAt": "2026-11-05T04:16:00.187758Z",
+      "workUnits": "2",
+      "maxGapMs": "1043",
+      "previousAt": "2026-11-05T04:15:58.124577Z",
+      "boundaryGapNs": "1020247000",
+      "passages": [
+        {
+          "at": "2026-11-05T04:15:59.144824Z",
+          "offsetNs": "0"
+        },
+        {
+          "at": "2026-11-05T04:16:00.187758Z",
+          "offsetNs": "1042934000"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T04:16:01.156Z",
+      "receivedAt": "2026-11-05T04:16:01.258Z",
+      "measurementEligible": true
+    },
+    {
+      "segmentId": "9d52e92a-84f1-41ee-aa6a-cc58097e167b",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": false,
+      "startAt": "2026-11-05T04:16:01.167306Z",
+      "endAt": "2026-11-05T04:16:02.215107Z",
+      "workUnits": "2",
+      "maxGapMs": "1048",
+      "previousAt": "2026-11-05T04:16:00.187758Z",
+      "boundaryGapNs": "979548000",
+      "passages": [
+        {
+          "at": "2026-11-05T04:16:01.167306Z",
+          "offsetNs": "0"
+        },
+        {
+          "at": "2026-11-05T04:16:02.215107Z",
+          "offsetNs": "1047801000"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T04:16:03.158Z",
+      "receivedAt": "2026-11-05T04:16:03.272Z",
+      "measurementEligible": true
+    },
+    {
+      "segmentId": "d60ed343-c953-40b5-a20d-54f8354b18f4",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": false,
+      "startAt": "2026-11-05T04:16:03.210581Z",
+      "endAt": "2026-11-05T04:16:04.263231Z",
+      "workUnits": "2",
+      "maxGapMs": "1053",
+      "previousAt": "2026-11-05T04:16:02.215107Z",
+      "boundaryGapNs": "995474000",
+      "passages": [
+        {
+          "at": "2026-11-05T04:16:03.210581Z",
+          "offsetNs": "0"
+        },
+        {
+          "at": "2026-11-05T04:16:04.263231Z",
+          "offsetNs": "1052650000"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T04:16:05.159Z",
+      "receivedAt": "2026-11-05T04:16:05.274Z",
+      "measurementEligible": true
+    },
+    {
+      "segmentId": "2095310a-c2b8-4ff5-a84d-7247c28856ca",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": false,
+      "startAt": "2026-11-05T04:16:05.196550Z",
+      "endAt": "2026-11-05T04:16:06.141736Z",
+      "workUnits": "2",
+      "maxGapMs": "946",
+      "previousAt": "2026-11-05T04:16:04.263231Z",
+      "boundaryGapNs": "933319000",
+      "passages": [
+        {
+          "at": "2026-11-05T04:16:05.196550Z",
+          "offsetNs": "0"
+        },
+        {
+          "at": "2026-11-05T04:16:06.141736Z",
+          "offsetNs": "945186000"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T04:16:07.180Z",
+      "receivedAt": "2026-11-05T04:16:07.307Z",
+      "measurementEligible": true
+    },
+    {
+      "segmentId": "a2337f0b-aa6d-4e05-a953-58f90e9748b0",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": false,
+      "startAt": "2026-11-05T04:16:07.152728Z",
+      "endAt": "2026-11-05T04:16:09.014064Z",
+      "workUnits": "3",
+      "maxGapMs": "1011",
+      "previousAt": "2026-11-05T04:16:06.141736Z",
+      "boundaryGapNs": "1010992000",
+      "passages": [
+        {
+          "at": "2026-11-05T04:16:07.152728Z",
+          "offsetNs": "0"
+        },
+        {
+          "at": "2026-11-05T04:16:08.079094Z",
+          "offsetNs": "926366000"
+        },
+        {
+          "at": "2026-11-05T04:16:09.014064Z",
+          "offsetNs": "1861336000"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T04:16:09.170Z",
+      "receivedAt": "2026-11-05T04:16:09.275Z",
+      "measurementEligible": true
+    },
+    {
+      "segmentId": "15b5178f-8644-40d6-9b89-59413ba30dff",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": false,
+      "startAt": "2026-11-05T04:16:10.034228Z",
+      "endAt": "2026-11-05T04:16:10.967725Z",
+      "workUnits": "2",
+      "maxGapMs": "1021",
+      "previousAt": "2026-11-05T04:16:09.014064Z",
+      "boundaryGapNs": "1020164000",
+      "passages": [
+        {
+          "at": "2026-11-05T04:16:10.034228Z",
+          "offsetNs": "0"
+        },
+        {
+          "at": "2026-11-05T04:16:10.967725Z",
+          "offsetNs": "933497000"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T04:16:11.173Z",
+      "receivedAt": "2026-11-05T04:16:11.268Z",
+      "measurementEligible": true
+    },
+    {
+      "segmentId": "68b9dcd2-63cd-4c78-833a-891069c7043a",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": false,
+      "startAt": "2026-11-05T04:16:11.805877Z",
+      "endAt": "2026-11-05T04:16:12.738903Z",
+      "workUnits": "2",
+      "maxGapMs": "934",
+      "previousAt": "2026-11-05T04:16:10.967725Z",
+      "boundaryGapNs": "838152000",
+      "passages": [
+        {
+          "at": "2026-11-05T04:16:11.805877Z",
+          "offsetNs": "0"
+        },
+        {
+          "at": "2026-11-05T04:16:12.738903Z",
+          "offsetNs": "933026000"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T04:16:13.177Z",
+      "receivedAt": "2026-11-05T04:16:13.279Z",
+      "measurementEligible": true
+    },
+    {
+      "segmentId": "e9e093e0-5c52-4da3-acc9-724e9b60927d",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": false,
+      "startAt": "2026-11-05T04:16:13.800227Z",
+      "endAt": "2026-11-05T04:16:14.750214Z",
+      "workUnits": "2",
+      "maxGapMs": "1062",
+      "previousAt": "2026-11-05T04:16:12.738903Z",
+      "boundaryGapNs": "1061324000",
+      "passages": [
+        {
+          "at": "2026-11-05T04:16:13.800227Z",
+          "offsetNs": "0"
+        },
+        {
+          "at": "2026-11-05T04:16:14.750214Z",
+          "offsetNs": "949987000"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T04:16:15.165Z",
+      "receivedAt": "2026-11-05T04:16:15.291Z",
+      "measurementEligible": true
+    },
+    {
+      "segmentId": "23bb34d1-6120-46c2-9e04-887c6dd58a31",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": false,
+      "startAt": "2026-11-05T04:16:15.662318Z",
+      "endAt": "2026-11-05T04:16:16.603902Z",
+      "workUnits": "2",
+      "maxGapMs": "942",
+      "previousAt": "2026-11-05T04:16:14.750214Z",
+      "boundaryGapNs": "912104000",
+      "passages": [
+        {
+          "at": "2026-11-05T04:16:15.662318Z",
+          "offsetNs": "0"
+        },
+        {
+          "at": "2026-11-05T04:16:16.603902Z",
+          "offsetNs": "941584000"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T04:16:17.184Z",
+      "receivedAt": "2026-11-05T04:16:17.298Z",
+      "measurementEligible": true
+    },
+    {
+      "segmentId": "ea141d42-4725-44dc-bd6b-81bb4e434fde",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": false,
+      "startAt": "2026-11-05T04:16:17.495148Z",
+      "endAt": "2026-11-05T04:16:18.362006Z",
+      "workUnits": "2",
+      "maxGapMs": "892",
+      "previousAt": "2026-11-05T04:16:16.603902Z",
+      "boundaryGapNs": "891246000",
+      "passages": [
+        {
+          "at": "2026-11-05T04:16:17.495148Z",
+          "offsetNs": "0"
+        },
+        {
+          "at": "2026-11-05T04:16:18.362006Z",
+          "offsetNs": "866858000"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T04:16:19.173Z",
+      "receivedAt": "2026-11-05T04:16:19.265Z",
+      "measurementEligible": true
+    },
+    {
+      "segmentId": "3e84765c-f25d-4644-8f0a-4a0f1e6dceaa",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": false,
+      "startAt": "2026-11-05T04:16:19.326151Z",
+      "endAt": "2026-11-05T04:16:20.289982Z",
+      "workUnits": "2",
+      "maxGapMs": "965",
+      "previousAt": "2026-11-05T04:16:18.362006Z",
+      "boundaryGapNs": "964145000",
+      "passages": [
+        {
+          "at": "2026-11-05T04:16:19.326151Z",
+          "offsetNs": "0"
+        },
+        {
+          "at": "2026-11-05T04:16:20.289982Z",
+          "offsetNs": "963831000"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T04:16:21.173Z",
+      "receivedAt": "2026-11-05T04:16:21.276Z",
+      "measurementEligible": true
+    },
+    {
+      "segmentId": "18d0d431-e447-4815-b1d7-8dc29a827819",
+      "continuityId": "4443d0f2461c9032459b22e63230caef8c15ef5a538a07764e856921fd543a34",
+      "discontinuity": false,
+      "startAt": "2026-11-05T04:16:21.243841Z",
+      "endAt": "2026-11-05T04:16:22.261093Z",
+      "workUnits": "2",
+      "maxGapMs": "1018",
+      "previousAt": "2026-11-05T04:16:20.289982Z",
+      "boundaryGapNs": "953859000",
+      "passages": [
+        {
+          "at": "2026-11-05T04:16:21.243841Z",
+          "offsetNs": "0"
+        },
+        {
+          "at": "2026-11-05T04:16:22.261093Z",
+          "offsetNs": "1017252000"
+        }
+      ],
+      "provenance": "hardware",
+      "profile": "staging",
+      "observedAt": "2026-11-05T04:16:23.178Z",
+      "receivedAt": "2026-11-05T04:16:23.280Z",
+      "measurementEligible": true
+    }
+  ],
+  "nextCursor": "WyJtZWFzdXJlbWVudC1ydW5zLnYxIiwic2Vwb2xpYS1jb3JlLXNlcG9saWEtMjAyNjExMDMiLCIxNzExNCJd"
+}

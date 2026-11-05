@@ -114,6 +114,12 @@ document.addEventListener('click', (ev) => {
     return;
   }
   const action = el.getAttribute('data-action');
+  if (action === 'skip') {
+    ev.preventDefault();
+    main.focus({ preventScroll: true });
+    main.scrollIntoView({ block: 'start' });
+    return;
+  }
   if (action === 'older') loadOlderEvents(1);
   if (action === 'read') {
     // Move focus somewhere stable before the button disappears.

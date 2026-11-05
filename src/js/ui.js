@@ -48,7 +48,7 @@ export function stamp(iso) {
   return `<span class="stamp">${esc(utc(iso))} <span class="muted">(${relTime(iso)})</span></span>`;
 }
 
-/** Fill every relative-time element; called once per second. */
+/** Fill every relative-time element; called once per second. @param {Document | Element} [root] */
 export function updateRelTimes(root = document) {
   const now = Date.now();
   for (const el of root.querySelectorAll('time[data-rel]')) {
@@ -125,7 +125,7 @@ export function gate(r, what) {
 /** Notice for kept data after a failed refresh, or cached data. @param {import('./store.js').Resource} r */
 export function staleNotice(r) {
   if (r.state === 'error' && r.data) {
-    return `<p class="notice">${icon('clock', 'icon icon-sm')}Refresh failed (${esc(r.message)}). Showing data loaded ${relTime(new Date(r.lastOkAt ?? 0).toISOString())}.</p>`;
+    return `<p class="notice">${icon('clock', 'icon icon-sm')}<span>Refresh failed (${esc(r.message)}). Showing data loaded ${relTime(new Date(r.lastOkAt ?? 0).toISOString())}.</span></p>`;
   }
   return '';
 }

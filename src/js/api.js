@@ -13,9 +13,9 @@
 export const API_BASE = 'https://api.squeekchain.com/v1';
 
 /**
- * @typedef {{kind:'ok', data:any, at:number}
+ * @typedef {{kind:'ok', data:any, at:number, settlementSource?:string|null}
  *   | {kind:'unavailable', reason:string, at:number}
- *   | {kind:'error', message:string, retryAfterMs?:number, at:number}} Result
+ *   | {kind:'error', message:string, code?:string, retryAfterMs?:number, at:number}} Result
  */
 
 /**
@@ -90,6 +90,7 @@ export async function getJson(path, kind, opts = {}) {
       return {
         kind: 'error',
         message: describeError(code),
+        code,
         retryAfterMs: Number.isFinite(ra) && ra > 0 ? ra * 1000 : undefined,
         at,
       };
@@ -102,7 +103,10 @@ export async function getJson(path, kind, opts = {}) {
     }
     const problem = validators[kind](body);
     if (problem) return { kind: 'error', message: problem, at };
-    return { kind: 'ok', data: body, at };
+    return {
+      kind: 'ok', data: body, at,
+      ...(kind === 'settlements' ? { settlementSource: res.headers.get('X-Squeek-Settlement-Source') } : {}),
+    };
   } catch (e) {
     const aborted = e instanceof Error && e.name === 'AbortError';
     return { kind: 'error', message: aborted ? 'request timed out' : 'network error, API unreachable', at };

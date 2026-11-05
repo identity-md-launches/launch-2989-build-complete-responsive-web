@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "installationId": "sepolia-core-sepolia-20261103",
+  "revision": "DhO4hk5XFnrOiH-6ze7-ViDk--xP_Ol9c3YDc-KesxQ",
+  "generatedAt": "2026-11-05T09:13:33.472Z",
+  "measurement": {
+    "freshness": "online",
+    "observedAt": "2026-11-05T09:13:02.334Z",
+    "receivedAt": "2026-11-05T09:13:02.468Z",
+    "staleAfterSeconds": 120,
+    "counterEpoch": "c53e3951-4e69-4ad3-b59c-d122a064d15a",
+    "cumulativeWorkUnits": "3817",
+    "provenance": "hardware",
+    "coreStatus": "IDLE",
+    "rpmMilli": 0,
+    "speedMmPerSecond": 0,
+    "distanceMm": 3351326
+  },
+  "builder": {
+    "status": "available",
+    "anchor": {
+      "cumulativeWork": "3817",
+      "cumulativeBlockUnits": "366425653103",
+      "blockHeight": "366",
+      "blockProgress": "425653103",
+      "workPerThousandBlocks": "9546",
+      "settledThroughRound": "223",
+      "confirmedAt": "2026-11-05T09:00:36.000Z",
+      "transactionHash": "0x20972f881b9ec1eeefade21245ab836bb23933d4b1bd873244e8fae51c9e9543"
+    },
+    "queued": {
+      "closedRoundCount": "1",
+      "closedWorkUnits": "0",
+      "openRoundWorkUnits": "0"
+    },
+    "projected": {
+      "cumulativeWork": "3817",
+      "cumulativeBlockUnits": "366425653103",
+      "blockHeight": "366",
+      "blockProgress": "425653103",
+      "workPerThousandBlocks": "9546",
+      "firstCompletedBlock": null,
+      "lastCompletedBlock": null,
+      "completedBlockCount": "0",
+      "lifecycle": "optimistic"
+    }
+  },
+  "oracle": {
+    "state": "accepted",
+    "reason": null,
+    "latestAcceptedAt": "2026-11-05T09:13:02.468Z",
+    "latestClosure": {
+      "firstRound": "224",
+      "lastRound": "224",
+      "roundCount": "1",
+      "acceptedAt": "2026-11-05T09:10:02.452Z"
+    }
+  },
+  "settlementQueue": {
+    "status": "available",
+    "state": "submitted",
+    "settlementEnabled": true,
+    "reporterEnvironmentEnabled": true,
+    "buffered": {
+      "firstRound": "224",
+      "lastRound": "224",
+      "roundCount": "1",
+      "activeRoundCount": "0",
+      "workUnits": "0"
+    },
+    "projected": {
+      "cumulativeWork": "3817",
+      "cumulativeBlockUnits": "366425653103",
+      "blockHeight": "366",
+      "blockProgress": "425653103",
+      "workPerThousandBlocks": "9546",
+      "firstCompletedBlock": null,
+      "lastCompletedBlock": null,
+      "completedBlockCount": "0",
+      "lifecycle": "optimistic"
+    },
+    "incidentOpen": false,
+    "blockedReason": null,
+    "lastRun": {
+      "startedAt": "2026-11-05T09:10:27.330Z",
+      "finishedAt": "2026-11-05T09:10:30.042Z",
+      "result": "submitted"
+    },
+    "latestSubmission": {
+      "submissionId": "895463d0-bde9-46d5-bc3f-e4d6f87b8c36",
+      "lifecycle": "submitted",
+      "previousSettledThroughRound": "223",
+      "settledThroughRound": "224",
+      "roundCount": "1",
+      "activeRoundCount": "0",
+      "expected": {
+        "cumulativeWork": "3817",
+        "cumulativeBlockUnits": "366425653103",
+        "blockHeight": "366",
+        "blockProgress": "425653103",
+        "workPerThousandBlocks": "9546",
+        "firstCompletedBlock": null,
+        "lastCompletedBlock": null,
+        "completedBlockCount": "0"
+      },
+      "transactionHash": "0x4e678c50bae28fa046860c6c7ae3203e01f0fb842554d2951a759e1f055f16e6",
+      "createdAt": "2026-11-05T09:10:28.755Z",
+      "submittedAt": "2026-11-05T09:10:28.755Z",
+      "confirmedAt": null,
+      "terminalAt": null,
+      "changedAt": "2026-11-05T09:10:28.755Z",
+      "outcomeCode": null
+    }
+  },
+  "signer": {
+    "kind": "ed25519",
+    "algorithm": "ed25519",
+    "keySlot": null,
+    "enrolledAt": "2026-11-04T21:32:51.138Z",
+    "lastVerifiedAt": "2026-11-05T09:13:02.468Z",
+    "lastSignature": "PfDRmxkhBAXgyL6YMYAmhPrKKOKZiQo4OXeVKSOIL9c/+r0QVujTmfsa2bId73K0QdHGFKzPKXCmpTYZdAeqDQ=="
+  },
+  "modules": [
+    {
+      "instanceId": "wheel",
+      "moduleType": "wheel.counter",
+      "driverId": "usb-rp2040-a3144e-lm393",
+      "moduleVersion": "0.2.1",
+      "schemaVersion": 1,
+      "state": "ready",
+      "observedAt": "2026-11-05T09:13:02.334801Z",
+      "provenance": "hardware",
+      "health": {
+        "checkedAt": "2026-11-05T09:13:02.334801Z"
+      },
+      "data": {}
+    }
+  ]
+}

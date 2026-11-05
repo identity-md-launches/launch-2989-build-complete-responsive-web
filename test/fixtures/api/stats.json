@@ -1,0 +1,2494 @@
+{
+  "schemaVersion": 1,
+  "installationId": "sepolia-core-sepolia-20261103",
+  "revision": "U5Gu7vMT80azeSXZg6ypnfnBXPvWuuzPsmH4UlMQwmo",
+  "generatedAt": "2026-11-05T09:13:31.968Z",
+  "range": "7d",
+  "timezone": "UTC",
+  "window": {
+    "startAt": "2026-10-29T12:00:00.000Z",
+    "endAt": "2026-11-05T09:13:31.968Z",
+    "dayCount": 7,
+    "bucketSeconds": 1800,
+    "roundSeconds": 600
+  },
+  "lifetime": {
+    "acceptedWorkUnits": "3817",
+    "observedDistanceMm": "3351326",
+    "activeDayCount": 1,
+    "settledBlockCount": "366",
+    "settlementCount": "37",
+    "coverageBps": 10000,
+    "firstObservedAt": "2026-11-03T19:50:00.000Z",
+    "settledWorkUnits": "3817"
+  },
+  "activity": {
+    "provenance": "accepted_rounds",
+    "coverage": {
+      "expectedRoundCount": 991,
+      "observedRoundCount": 224,
+      "coverageBps": 2260,
+      "complete": false
+    },
+    "summary": {
+      "observedWorkUnits": "3817",
+      "observedDistanceMm": "3351326",
+      "activeDayCount": 1,
+      "inactiveDayCount": 0,
+      "averageWorkPerActiveDayMilli": "3817000",
+      "medianWorkPerActiveDay": "3817",
+      "averageDistancePerActiveDayMm": "3351326",
+      "mostActiveDate": "2026-11-04",
+      "mostActiveDateWorkUnits": "3817",
+      "peakWindowStartMinuteUtc": 270
+    },
+    "days": [
+      {
+        "date": "2026-10-29",
+        "coverage": {
+          "expectedRoundCount": 144,
+          "observedRoundCount": 0,
+          "coverageBps": 0
+        },
+        "observedWorkUnits": "0",
+        "distanceMm": null,
+        "buckets": [
+          {
+            "startMinuteUtc": 0,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 30,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 60,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 90,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 120,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 150,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 180,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 210,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 240,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 270,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 300,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 330,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 360,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 390,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 420,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 450,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 480,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 510,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 540,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 570,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 600,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 630,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 660,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 690,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 720,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 750,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 780,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 810,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 840,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 870,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 900,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 930,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 960,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 990,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1020,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1050,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1080,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1110,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1140,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1170,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1200,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1230,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1260,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1290,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1320,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1350,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1380,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1410,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          }
+        ]
+      },
+      {
+        "date": "2026-10-30",
+        "coverage": {
+          "expectedRoundCount": 144,
+          "observedRoundCount": 0,
+          "coverageBps": 0
+        },
+        "observedWorkUnits": "0",
+        "distanceMm": null,
+        "buckets": [
+          {
+            "startMinuteUtc": 0,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 30,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 60,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 90,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 120,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 150,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 180,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 210,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 240,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 270,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 300,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 330,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 360,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 390,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 420,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 450,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 480,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 510,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 540,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 570,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 600,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 630,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 660,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 690,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 720,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 750,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 780,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 810,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 840,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 870,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 900,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 930,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 960,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 990,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1020,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1050,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1080,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1110,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1140,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1170,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1200,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1230,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1260,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1290,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1320,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1350,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1380,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1410,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          }
+        ]
+      },
+      {
+        "date": "2026-10-31",
+        "coverage": {
+          "expectedRoundCount": 144,
+          "observedRoundCount": 0,
+          "coverageBps": 0
+        },
+        "observedWorkUnits": "0",
+        "distanceMm": null,
+        "buckets": [
+          {
+            "startMinuteUtc": 0,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 30,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 60,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 90,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 120,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 150,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 180,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 210,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 240,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 270,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 300,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 330,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 360,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 390,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 420,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 450,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 480,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 510,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 540,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 570,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 600,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 630,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 660,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 690,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 720,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 750,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 780,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 810,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 840,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 870,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 900,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 930,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 960,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 990,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1020,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1050,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1080,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1110,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1140,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1170,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1200,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1230,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1260,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1290,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1320,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1350,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1380,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1410,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          }
+        ]
+      },
+      {
+        "date": "2026-11-01",
+        "coverage": {
+          "expectedRoundCount": 144,
+          "observedRoundCount": 0,
+          "coverageBps": 0
+        },
+        "observedWorkUnits": "0",
+        "distanceMm": null,
+        "buckets": [
+          {
+            "startMinuteUtc": 0,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 30,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 60,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 90,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 120,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 150,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 180,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 210,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 240,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 270,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 300,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 330,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 360,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 390,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 420,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 450,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 480,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 510,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 540,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 570,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 600,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 630,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 660,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 690,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 720,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 750,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 780,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 810,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 840,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 870,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 900,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 930,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 960,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 990,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1020,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1050,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1080,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1110,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1140,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1170,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1200,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1230,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1260,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1290,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1320,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1350,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1380,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1410,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          }
+        ]
+      },
+      {
+        "date": "2026-11-02",
+        "coverage": {
+          "expectedRoundCount": 144,
+          "observedRoundCount": 0,
+          "coverageBps": 0
+        },
+        "observedWorkUnits": "0",
+        "distanceMm": null,
+        "buckets": [
+          {
+            "startMinuteUtc": 0,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 30,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 60,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 90,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 120,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 150,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 180,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 210,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 240,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 270,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 300,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 330,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 360,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 390,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 420,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 450,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 480,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 510,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 540,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 570,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 600,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 630,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 660,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 690,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 720,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 750,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 780,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 810,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 840,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 870,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 900,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 930,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 960,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 990,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1020,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1050,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1080,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1110,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1140,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1170,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1200,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1230,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1260,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1290,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1320,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1350,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1380,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1410,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          }
+        ]
+      },
+      {
+        "date": "2026-11-03",
+        "coverage": {
+          "expectedRoundCount": 144,
+          "observedRoundCount": 97,
+          "coverageBps": 6736
+        },
+        "observedWorkUnits": "0",
+        "distanceMm": null,
+        "buckets": [
+          {
+            "startMinuteUtc": 0,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 30,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 60,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 90,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 120,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 150,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 180,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 210,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 240,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 270,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 300,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 330,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 360,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 390,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 420,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 450,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 480,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 510,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 540,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 570,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 600,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 630,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 660,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 690,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 720,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 750,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 780,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 810,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 840,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 870,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 900,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 930,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 960,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 990,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1020,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1050,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1080,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1110,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1140,
+            "coverage": "missing",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 1170,
+            "coverage": "partial",
+            "observedRoundCount": 1,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1200,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1230,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1260,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1290,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1320,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1350,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1380,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1410,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-04",
+        "coverage": {
+          "expectedRoundCount": 127,
+          "observedRoundCount": 127,
+          "coverageBps": 10000
+        },
+        "observedWorkUnits": "3817",
+        "distanceMm": "3351326",
+        "buckets": [
+          {
+            "startMinuteUtc": 0,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 30,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 60,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 90,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 120,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 150,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "6"
+          },
+          {
+            "startMinuteUtc": 180,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 210,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 240,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "721"
+          },
+          {
+            "startMinuteUtc": 270,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "1130"
+          },
+          {
+            "startMinuteUtc": 300,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "669"
+          },
+          {
+            "startMinuteUtc": 330,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "962"
+          },
+          {
+            "startMinuteUtc": 360,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 390,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "329"
+          },
+          {
+            "startMinuteUtc": 420,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 450,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 480,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 510,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 540,
+            "coverage": "partial",
+            "observedRoundCount": 1,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 570,
+            "coverage": "future",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 600,
+            "coverage": "future",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 630,
+            "coverage": "future",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 660,
+            "coverage": "future",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 690,
+            "coverage": "future",
+            "observedRoundCount": 0,
+            "workUnits": null
+          },
+          {
+            "startMinuteUtc": 720,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 750,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 780,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 810,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 840,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 870,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 900,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 930,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 960,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 990,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1020,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1050,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1080,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1110,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1140,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1170,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1200,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1230,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1260,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1290,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1320,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1350,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1380,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          },
+          {
+            "startMinuteUtc": 1410,
+            "coverage": "complete",
+            "observedRoundCount": 3,
+            "workUnits": "0"
+          }
+        ]
+      }
+    ],
+    "typicalDay": [
+      {
+        "startMinuteUtc": 0,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 30,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 60,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 90,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 120,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 150,
+        "totalWorkUnits": "6",
+        "observedDayCount": 2,
+        "meanWorkMilli": "3000"
+      },
+      {
+        "startMinuteUtc": 180,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 210,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 240,
+        "totalWorkUnits": "721",
+        "observedDayCount": 2,
+        "meanWorkMilli": "360500"
+      },
+      {
+        "startMinuteUtc": 270,
+        "totalWorkUnits": "1130",
+        "observedDayCount": 2,
+        "meanWorkMilli": "565000"
+      },
+      {
+        "startMinuteUtc": 300,
+        "totalWorkUnits": "669",
+        "observedDayCount": 2,
+        "meanWorkMilli": "334500"
+      },
+      {
+        "startMinuteUtc": 330,
+        "totalWorkUnits": "962",
+        "observedDayCount": 2,
+        "meanWorkMilli": "481000"
+      },
+      {
+        "startMinuteUtc": 360,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 390,
+        "totalWorkUnits": "329",
+        "observedDayCount": 2,
+        "meanWorkMilli": "164500"
+      },
+      {
+        "startMinuteUtc": 420,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 450,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 480,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 510,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 540,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 570,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 600,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 630,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 660,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 690,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 720,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 750,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 780,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 810,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 840,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 870,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 900,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 930,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 960,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 990,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 1020,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 1050,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 1080,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 1110,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 1140,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 1170,
+        "totalWorkUnits": "0",
+        "observedDayCount": 1,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 1200,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 1230,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 1260,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 1290,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 1320,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 1350,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 1380,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      },
+      {
+        "startMinuteUtc": 1410,
+        "totalWorkUnits": "0",
+        "observedDayCount": 2,
+        "meanWorkMilli": "0"
+      }
+    ]
+  },
+  "records": {
+    "mostWorkHalfHour": {
+      "value": "1130",
+      "occurredAt": "2026-11-05T04:30:00.000Z",
+      "coverage": "complete"
+    },
+    "mostWorkUtcDay": {
+      "value": "3817",
+      "occurredAt": "2026-11-04T12:00:00.000Z",
+      "coverage": "partial"
+    },
+    "maximumDailyDistanceMm": {
+      "value": "3351326",
+      "occurredAt": "2026-11-04T12:00:00.000Z",
+      "coverage": "partial"
+    },
+    "peakObservedRpmMilli": {
+      "value": "79775",
+      "occurredAt": "2026-11-05T05:12:16.046Z",
+      "coverage": "partial"
+    },
+    "peakObservedSpeedMmPerSecond": {
+      "value": "1167",
+      "occurredAt": "2026-11-05T05:12:16.046Z",
+      "coverage": "partial"
+    },
+    "longestActiveWindowMinutes": {
+      "value": "110",
+      "occurredAt": "2026-11-05T04:10:00.000Z",
+      "coverage": "partial"
+    },
+    "longestActiveDayStreak": {
+      "value": "1",
+      "occurredAt": "2026-11-04T12:00:00.000Z",
+      "coverage": "partial"
+    }
+  },
+  "blocks": {
+    "status": "unavailable",
+    "reason": "completion_boundaries_unavailable"
+  },
+  "rounds": {
+    "observedCount": 224,
+    "activeCount": 14,
+    "zeroWorkCount": 210,
+    "missingCount": 767,
+    "activeRateBps": 625,
+    "averageActiveWorkMilli": "272642",
+    "medianActiveWork": "250",
+    "p90ActiveWork": "485",
+    "mostActiveWork": "500"
+  },
+  "oracle": {
+    "status": "unavailable",
+    "reason": "projection_not_initialized"
+  }
+}

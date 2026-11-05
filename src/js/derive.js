@@ -245,6 +245,24 @@ export function sortSettlements(list) {
 }
 
 /**
+ * Transport success does not establish snapshot freshness. Ranged settlement
+ * responses are shared for 60 seconds; allow one more polling interval.
+ * @param {{source:string|null, generatedAt:string|null, window:any}|null} snapshot
+ * @param {number} now
+ */
+export function settlementFreshness(snapshot, now) {
+  const generated = ms(snapshot?.generatedAt);
+  const end = ms(snapshot?.window?.endAt);
+  const reasons = [];
+  if (snapshot?.source === 'durable-cache') reasons.push('durable-cache fallback');
+  if (snapshot?.source === 'unavailable') reasons.push('source unavailable');
+  if (end !== null && now >= end) reasons.push('snapshot window has expired');
+  if (generated !== null && now - generated > 120_000) reasons.push('snapshot is over two minutes old');
+  const freshness = reasons.length ? 'stale' : generated === null || end === null ? 'unavailable' : 'fresh';
+  return { freshness: /** @type {'fresh'|'stale'|'unavailable'} */ (freshness), reasons };
+}
+
+/**
  * "What just happened?" sentences, each from a field the API returned.
  * Sentences whose source is missing are left out rather than guessed.
  * @param {{ status:any, statusFresh:'fresh'|'stale'|'unavailable', events:any[], stats:any, settlements:any, now:number }} s
